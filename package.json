@@ -1,0 +1,25 @@
+{
+  "name": "desafiostarwars",
+  "version": "1.0.0",
+  "description": "Projeto Star Wars",
+  "main": "index.php",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.1.0",
+    "font-awesome": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "projeto_star_wars"
+  },
+  "keywords": [
+    "star",
+    "wars",
+    "projeto"
+  ],
+  "author": "jvictoralves93",
+  "license": "ISC"
+}
