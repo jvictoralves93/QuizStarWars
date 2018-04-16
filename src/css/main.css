@@ -1,0 +1,70 @@
+@import url(http://allfont.net/allfont.css?fonts=star-jedi);
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+.swg {
+  display: inline-block;
+  font: normal normal normal 14px/1 StarWarsGlyphicons;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.logo {
+  font-family: 'StarWarsGlyphicons';
+  margin-top: 100px !important; }
+
+.hvr-grow:hover, .hvr-grow:focus {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 20px 8px rgba(40, 189, 195, 0.9);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-transition: 2s; }
+
+.btn-default:hover {
+  border-color: black !important;
+  background-color: #0d0101 !important;
+  color: rgba(52, 180, 180, 0.9); }
+
+.btn-default {
+  background-color: #4d61d2 !important;
+  border-color: #4d61d2 !important;
+  box-shadow: 0 0 20px 4px rgba(40, 58, 195, 0.9); }
+
+.btn-iniciar {
+  background-color: #4d61d2 !important;
+  border-color: #4d61d2 !important;
+  color: #fff; }
+
+.btn-iniciar:hover, .btn-iniciar:focus {
+  background-color: #4d8fd2 !important;
+  border-color: #4d8fd2 !important;
+  color: #fff; }
+
+@media (min-width: 768px) {
+  .motto {
+    margin-left: 250px;
+    margin-right: 250px; } }
+
+@media (max-width: 768px) {
+  #background {
+    min-height: 1200px; } }
+
+@media (min-width: 1600px) {
+  .main {
+    padding-top: 10em; } }
+
+.motto, .btn, #menu {
+  font-family: 'Exo 2', sans-serif; }
+
+#exampleModalCenter {
+  font-family: 'Exo 2', sans-serif;
+  padding-top: 10%;
+  text-align: center;
+  overflow: hidden; }
+
+.desc {
+  min-height: 250px; }
+
+.modal-header .close {
+  margin-top: -25px; }
