@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Projeto Star Wars",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "devDependencies": {
     "bootstrap": "^4.1.0",
     "font-awesome": "^4.7.0",

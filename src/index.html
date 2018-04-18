@@ -13,7 +13,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
 	<link href="css/coming-sssoon.css" rel="stylesheet" />
 
-    <!--     Fonts     -->
+    <!--     Fonts & CSS    -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/starwars-glyphicons.css">    
@@ -24,7 +24,6 @@
 <body>
 <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -34,7 +33,6 @@
       </button>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" id="menu">
             <li>
@@ -65,20 +63,13 @@
         <!--<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
             <source src="video/time.webm" type="video/webm">
             <source src="video/time.mp4" type="video/mp4">
-            Video not supported
         </video>
         -->
-<!--    Change the image source '/images/video_bg.jpg')" with your favourite image.     -->
-
     <div class="cover black" data-color="black"></div>
-
-<!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
-
     <div class="container text-center">
         <h1 class="logo cursive" id="logo">
             <img src="images/starwars-logo.png" alt="Logo Star Wars" class="img-fluid" style="max-height: 200px">
         </h1>
-<!--  H1 can have 2 designs: "logo" and "logo cursive"           -->
         <div class="content">
             <div class="container">
                <h5 class="motto" id="motto">
@@ -88,8 +79,30 @@
             <div class="subscribe">
                 <div class="container row">
                     <div class="col-md-12 text-center">
-                        <button onclick="RodarImagem();" class="btn btn-default btn-fill btn-lg hvr-grow" id="Comecar">Começar o QUIZ</button>
+                        <button onclick="RodarImagem();" onmouseover="rodarSom();" class="btn btn-default btn-fill btn-lg hvr-grow" id="Comecar">Começar o QUIZ</button>
+                        <br><br><br>
+                        <a href="#" onclick="modalRanking();" title="ranking" id="ranking">Visualizar Ranking</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ranking Jogadores -->
+    <div class="modal fade" id="modalRanking" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content row col-md-12">
+                <div class="modal-header col-md-12">
+                    <h3 class="modal-title text-center" id="exampleModalCenterTitle">Ranking</h3>
+                </div>
+                <div class="modal-body col-md-12 row" style="text-align: left">
+                    <div class="col-md-12">
+                        <table id="tblListar" class="table table-responsive table-hover">
+
+	                    </table>
+                    </div>
+                </div>
+                <div class="modal-footer col-md-12 row" id="modal__footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -99,17 +112,24 @@
  </div>
 </body>
    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script>
-        function RodarImagem(){
-            document.getElementById("background").style.backgroundImage = "url('images/viagem.gif')";
-            document.getElementById("logo").style.display = "none";
-            document.getElementById("motto").style.display = "none";
-            document.getElementById("Comecar").style.display = "none";
-            document.getElementById("menu").style.display = "none";
-            setTimeout(function(){
-                window.location.href = "quiz.html";
-            }, 3000);  
-        };
-    </script>
+   <script src="js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="https://cdn.jsdelivr.net/tablesorter/2.17.4/js/jquery.tablesorter.min.js"></script>
+   <script src="js/app.js"></script>
+   <script>
+    function rodarSom(){
+        var audio = new Audio('sabre.mp3');
+        audio.play();
+    } 
+    function RodarImagem(){
+        document.getElementById("background").style.backgroundImage = "url('images/viagem.gif')";
+        document.getElementById("logo").style.display = "none";
+        document.getElementById("motto").style.display = "none";
+        document.getElementById("Comecar").style.display = "none";
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("ranking").style.display = "none";
+        setTimeout(function(){
+            window.location.href = "quiz.html";
+        }, 3000);  
+    };                             
+   </script>
 </html>

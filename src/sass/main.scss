@@ -37,6 +37,9 @@
     background-color: #4d61d2 !important;
     border-color: #4d61d2 !important;
     color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 220px !important;
 }
 .btn-iniciar:hover, .btn-iniciar:focus{
     background-color: #4d8fd2 !important;
@@ -45,7 +48,7 @@
 }
 
 .quiz__body{
-    //background-color: black;
+    //background-image: url(../images/fundo.png);
 }
 @media (min-width: 768px) {
     .motto{
@@ -67,17 +70,36 @@
 	font-family: 'Exo 2', sans-serif;
 }
 
-#exampleModalCenter{
+.modal{
     font-family: 'Exo 2', sans-serif;
-    padding-top: 10%;
+    padding-top: 2%;
     text-align: center;
     overflow: hidden;
 }
-
+@media (min-width: 1668px) {
+    .modal{
+    padding-top: 10%;
+}
+}
 .desc{
-    min-height: 250px;
+    min-height: 150px;
+    background-color: #fff;
 }
 
 .modal-header .close {
     margin-top: -25px;
+}
+
+#modal__footer{
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.colorlib-social>li>a{
+    cursor: pointer;
+}
+#colorlib-footer .copyright{
+    background: rgba(0,0,0,0.7) !important;
+    background-color: rgba(0,0,0,0.7) !important;
 }
